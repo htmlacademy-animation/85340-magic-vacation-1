@@ -1,0 +1,32 @@
+$socialItems: 3;
+
+.social-block:hover {
+  .social-block__list li {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease, transform 0.5s ease;
+
+    @for $i from 1 through $socialItems {
+      &:nth-child(#{$i}) {
+        transition-delay: 0.1s * $i, 0.1s * $i;
+      }
+    }
+  }
+}
+
+.social-block__toggler {
+  &::before {
+    transition: all 0.4s ease-out;
+  }
+}
+
+.social-block__list {
+  li {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.social-block__link {
+  transition: color 0.35s ease;
+}
