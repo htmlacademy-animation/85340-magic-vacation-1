@@ -1,0 +1,45 @@
+.form__input-wrapper {
+  width: calc(100% - 21rem);
+  border-radius: 3rem;
+  margin-right: 3rem;
+  overflow: hidden;
+
+  @media (min-width: $stop-scaling) {
+    width: calc(100% - 210px);
+    border-radius: 30px;
+    margin-right: 30px;
+  }
+
+  @media (orientation: portrait) {
+    width: calc(100% - 5rem);
+    margin-right: 1rem;
+  }
+
+  @media (max-width: $tablet) and (orientation: landscape) {
+    width: calc(100% - 9rem);
+  }
+
+  @media (max-width: $mobile) and (orientation: landscape) {
+    width: calc(100% - 5rem);
+    margin-right: 1rem;
+  }
+}
+
+.form__field {
+  margin-right: 0;
+  width: 100%;
+
+  .active & {
+    animation: displayFieldFromLeft 0.35s linear;
+  }
+}
+
+@keyframes displayFieldFromLeft {
+  0% {
+    transform: translateX(90%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
