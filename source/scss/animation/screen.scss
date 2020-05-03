@@ -6,6 +6,27 @@
   }
 }
 
+.screen--prizes,
+.screen--game,
+.screen--rules {
+  background-color: transparent;
+}
+
+.screen__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $c-dark;
+  transform: translateY(100%);
+  contain: paint;
+
+  .active & {
+    animation: fullBottomOffScreen 0.5s ease forwards;
+  }
+}
+
 @keyframes fullBottomOffScreen {
   0% {
     transform: translateY(100%);
