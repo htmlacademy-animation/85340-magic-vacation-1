@@ -1,0 +1,17 @@
+.screen__footer {
+  transform: translateY(100%);
+
+  .load & {
+    animation: fullBottomOffScreen 0.5s cubic-bezier(0.15, 0.85, 0.7, 1.06) forwards;
+  }
+}
+
+@keyframes fullBottomOffScreen {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
