@@ -1,9 +1,9 @@
 export default class TypographyAnimation {
   constructor(
-    element,
-    timer,
-    classForActivate,
-    property
+      element,
+      timer,
+      classForActivate,
+      property
   ) {
     this._element = element;
     this._timer = timer;
@@ -31,9 +31,11 @@ export default class TypographyAnimation {
   }
 
   prePareText() {
-    if (!this._element || this._element.classList.contains(`active`)) return;
+    if (!this._element || this._element.classList.contains(`active`)) {
+      return;
+    }
 
-    const text = this._element.textContent.trim().split(` `).filter((latter)=>latter !== '');
+    const text = this._element.textContent.trim().split(` `).filter((latter)=>latter !== ``);
 
     const content = text.reduce((fragmentParent, word, indexWord) => {
       const wordContainer = document.createElement(`span`);
@@ -54,7 +56,9 @@ export default class TypographyAnimation {
   }
 
   runAnimation(index) {
-    if (!this._element || this._element.classList.contains(`active`)) return;
+    if (!this._element || this._element.classList.contains(`active`)) {
+      return;
+    }
 
     setTimeout(() => {
       this._element.classList.add(this._classForActivate);
