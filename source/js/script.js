@@ -7,6 +7,7 @@ import chat from './modules/chat.js';
 import result from './modules/result.js';
 import form from './modules/form.js';
 import social from './modules/social.js';
+import TypographyAnimation from './modules/typography-animation';
 import FullPageScroll from './modules/full-page-scroll';
 
 // init modules
@@ -18,6 +19,23 @@ chat();
 result();
 form();
 social();
+
+document.body.addEventListener(`screenChanged`, (ev) => {
+  const textBlocks = ev.detail.screenElement.getElementsByClassName(`js-text-animation`);
+  let animationTopScreenTextLine = {};
+
+  for (var i = 0; i < textBlocks.length; i++) {
+    animationTopScreenTextLine[i] = new TypographyAnimation(textBlocks[i], 700, `active`, `transform`);
+  }
+
+  for (let key in animationTopScreenTextLine) {
+    animationTopScreenTextLine[key].destroyAnimation();
+
+    setTimeout(() => {
+      animationTopScreenTextLine[key].runAnimation(key);
+    }, 300);
+  }
+});
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
