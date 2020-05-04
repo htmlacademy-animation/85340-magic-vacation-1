@@ -1,0 +1,81 @@
+$rulesItems: 4;
+$rulesAnimDuration: 0.6s;
+$rulesAnimDelay: 0.1s;
+
+@mixin rules-link-animation($width) {
+  0% {
+    width: 5%;
+    color: transparent;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  80% {
+    color: transparent;
+  }
+
+  100% {
+    width: $width;
+    color: $c-dark;
+    opacity: 1;
+  }
+}
+
+.rules__item {
+  .active & {
+    @for $i from 1 through $rulesItems {
+      &:nth-child(#{$i}) {
+        &::before {
+          animation: increaseScale $rulesAnimDuration ease $rulesAnimDelay * $i both;
+        }
+
+        p {
+          animation: fadeInTransformRight $rulesAnimDuration ease $rulesAnimDelay * $i both;
+        }
+      }
+    }
+  }
+}
+
+.rules__link {
+  .active & {
+    animation: slideRuleBtnFromRight 0.35s linear $rulesAnimDuration + $rulesItems * $rulesAnimDelay both;
+
+    @media (max-width: $tablet) {
+      animation-name: slideRuleBtnFromRightMobile;
+    }
+  }
+}
+
+@keyframes increaseScale {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInTransformRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRuleBtnFromRight {
+  @include rules-link-animation(180px);
+}
+
+@keyframes slideRuleBtnFromRightMobile {
+  @include rules-link-animation(100%);
+}
