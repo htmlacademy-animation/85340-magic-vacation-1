@@ -44,7 +44,7 @@ $rulesAnimDelay: 0.1s;
   .active & {
     animation: slideRuleBtnFromRight 0.35s linear $rulesAnimDuration + $rulesItems * $rulesAnimDelay both;
 
-    @media (max-width: $tablet) {
+    @media (max-width: $tablet) and (orientation: portrait) {
       animation-name: slideRuleBtnFromRightMobile;
     }
   }
@@ -73,7 +73,7 @@ $rulesAnimDelay: 0.1s;
 }
 
 @keyframes slideRuleBtnFromRight {
-  @include rules-link-animation(180px);
+  @include rules-link-animation(15%);
 }
 
 @keyframes slideRuleBtnFromRightMobile {
