@@ -1,7 +1,7 @@
 .slider__item-text {
   opacity: 0;
   transform: translateX(10%);
-  transition: opacity 1s ease 1s, transform 0.5s ease 1s;
+  transition: opacity 0.8s ease $delayAfterTitle, transform 0.45s ease $delayAfterTitle;
 
   .swiper-slide-active &,
   .swiper-slide-next & {
@@ -10,10 +10,65 @@
   }
 
   .swiper-slide-next & {
-    transition-delay: 1.3s;
+    transition-delay: 1s;
   }
 
   .swiper-slide-prev & {
     transition-delay: 0.6s;
+  }
+}
+
+.slider__control {
+  .active & {
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(0.08, 0.93, 0.34, 0.53);
+    animation-delay: $delayAfterTitle * 2;
+    animation-fill-mode: both;
+  }
+}
+
+.slider__control--prev {
+  .active & {
+    animation-name: rollingInLeft;
+  }
+}
+
+.slider__control--next {
+  .active & {
+    animation-name: rollingInRight;
+  }
+}
+
+@keyframes rollingInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(300%) rotate(200deg);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateX(-10%) rotate(-30deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes rollingInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300%) rotate(-200deg);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateX(10%) rotate(30deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
   }
 }
