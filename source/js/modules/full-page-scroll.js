@@ -17,7 +17,6 @@ export default class FullPageScroll {
     window.addEventListener(`popstate`, this.onUrlHashChengedHandler);
 
     this.onUrlHashChenged();
-    this.changePageDisplay();
   }
 
   onScroll(evt) {
