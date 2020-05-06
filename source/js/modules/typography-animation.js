@@ -35,12 +35,12 @@ export default class TypographyAnimation {
       return;
     }
 
-    const text = this._element.textContent.trim().split(` `).filter((latter)=>latter !== ``);
+    const text = this._element.textContent.trim().split(` `).filter((letter)=>letter !== ``);
 
     const content = text.reduce((fragmentParent, word, indexWord) => {
       const wordContainer = document.createElement(`span`);
-      const wordElement = Array.from(word).reduce((fragment, latter, indexLetter) => {
-        fragment.appendChild(this.createElement(latter, indexLetter, indexWord));
+      const wordElement = Array.from(word).reduce((fragment, letter, indexLetter) => {
+        fragment.appendChild(this.createElement(letter, indexLetter, indexWord));
         return fragment;
       }, document.createDocumentFragment());
 

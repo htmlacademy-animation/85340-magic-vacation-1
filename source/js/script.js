@@ -24,22 +24,24 @@ document.body.addEventListener(`screenChanged`, (ev) => {
   const textBlocks = ev.detail.screenElement.getElementsByClassName(`js-text-animation`);
   let animationTopScreenTextLine = {};
 
-  for (var i = 0; i < textBlocks.length; i++) {
+  for (let i = 0; i < textBlocks.length; i++) {
     animationTopScreenTextLine[i] = new TypographyAnimation(textBlocks[i], 700, `active`, `transform`);
   }
 
   for (let key in animationTopScreenTextLine) {
-    animationTopScreenTextLine[key].destroyAnimation();
+    if ({}.hasOwnProperty.call(animationTopScreenTextLine, key)) {
+      animationTopScreenTextLine[key].destroyAnimation();
 
-    setTimeout(() => {
-      animationTopScreenTextLine[key].runAnimation(key);
-    }, 300);
+      setTimeout(() => {
+        animationTopScreenTextLine[key].runAnimation(key);
+      }, 300);
+    }
   }
 });
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
 
-window.addEventListener('load', () => {
+window.addEventListener(`load`, () => {
   document.body.classList.add(`load`);
 });
