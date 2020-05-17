@@ -5,13 +5,13 @@ export default class TypographyAnimation {
       classForActivate,
       property
   ) {
-    this._element = element;
-    this._timer = timer;
-    this._classForActivate = classForActivate;
-    this._property = property;
-    this._timeOffset = 0;
+    this.element = element;
+    this.timer = timer;
+    this.classForActivate = classForActivate;
+    this.property = property;
+    this.timeOffset = 0;
 
-    this.prePareText();
+    this.prepareText();
   }
 
   createElement(letter, indexLetter, indexWord) {
@@ -19,23 +19,23 @@ export default class TypographyAnimation {
     const delayItem = (indexLetter + 1) * 10 + indexWord * 15;
 
     span.textContent = letter;
-    span.style.transition = `${this._property} ${this._timer}ms ease ${this._timeOffset}ms`;
+    span.style.transition = `${this.property} ${this.timer}ms ease ${this.timeOffset}ms`;
 
     if (indexLetter % 2 === 0) {
-      this._timeOffset += (20 * 2 + delayItem);
+      this.timeOffset += (20 * 2 + delayItem);
     } else {
-      this._timeOffset -= (20 / 2 + delayItem);
+      this.timeOffset -= (20 / 2 + delayItem);
     }
 
     return span;
   }
 
-  prePareText() {
-    if (!this._element || this._element.classList.contains(`active`)) {
+  prepareText() {
+    if (!this.element || this.element.classList.contains(`active`)) {
       return;
     }
 
-    const text = this._element.textContent.trim().split(` `).filter((letter)=>letter !== ``);
+    const text = this.element.textContent.trim().split(` `).filter((letter)=>letter !== ``);
 
     const content = text.reduce((fragmentParent, word, indexWord) => {
       const wordContainer = document.createElement(`span`);
@@ -51,21 +51,21 @@ export default class TypographyAnimation {
       return fragmentParent;
     }, document.createDocumentFragment());
 
-    this._element.innerHTML = ``;
-    this._element.appendChild(content);
+    this.element.innerHTML = ``;
+    this.element.appendChild(content);
   }
 
   runAnimation(index) {
-    if (!this._element || this._element.classList.contains(`active`)) {
+    if (!this.element || this.element.classList.contains(`active`)) {
       return;
     }
 
     setTimeout(() => {
-      this._element.classList.add(this._classForActivate);
-    }, index * this._timer);
+      this.element.classList.add(this.classForActivate);
+    }, index * this.timer);
   }
 
   destroyAnimation() {
-    this._element.classList.remove(this._classForActivate);
+    this.element.classList.remove(this.classForActivate);
   }
 }

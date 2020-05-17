@@ -1,29 +1,474 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 269.43 260.54">
-  <path d="M175.44,249.28h48.36a13.27,13.27,0,0,0,13-10.65l3.74-18.32H172.36v25.89A3.09,3.09,0,0,0,175.44,249.28Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M235.79,241.69h-9.22a8.31,8.31,0,0,1-8.28-8.31V220.31" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-  <path d="M204.25,231.88h-2.05a3.45,3.45,0,0,0-3.43,3.45v2.92a3.45,3.45,0,0,0,3.43,3.45h2.05a3.45,3.45,0,0,0,3.43-3.45v-2.92A3.44,3.44,0,0,0,204.25,231.88Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M185.64,231.88h-2.05a3.45,3.45,0,0,0-3.43,3.45v2.92a3.45,3.45,0,0,0,3.43,3.45h2.05a3.45,3.45,0,0,0,3.43-3.45v-2.92A3.45,3.45,0,0,0,185.64,231.88Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M205,227.08c43.38,0,74.86-15.55,74.86-37s-31.48-37-74.86-37c-27.94,0-55.36,13.53-73.46,24.87a14.3,14.3,0,0,0,0,24.21c18.09,11.33,45.52,24.87,73.46,24.87" transform="translate(-40.77 -69.46)" fill="#068e4d"/>
-  <path d="M205,227.08c43.38,0,74.86-15.55,74.86-37s-31.48-37-74.86-37c-27.94,0-55.36,13.53-73.46,24.87a14.3,14.3,0,0,0,0,24.21C149.63,213.54,177.06,227.08,205,227.08Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-width="2"/>
-  <path d="M205,176.09c-28.23,0-56.07,5.76-72.81,10-3.95,1-6,2.66-6.08,4.34A12.93,12.93,0,0,1,132.18,179c16.74-10.5,44.58-24.68,72.81-24.68,44.81,0,73.64,16,73.64,35.75,0,0.12,0,.24,0,0.37-0.37-7.95-29.1-14.37-73.63-14.37" transform="translate(-40.77 -69.46)" fill="#36e69a"/>
-  <path d="M132.18,195.12c16.74,4.27,44.58,10,72.81,10,44.14,0,72.75-6.32,73.6-14.18-0.86,19.34-29.45,34.86-73.6,34.86-28.23,0-56.07-14.19-72.81-24.68a12.88,12.88,0,0,1-6-10.18c0.26,1.61,2.26,3.18,6,4.14" transform="translate(-40.77 -69.46)" fill="#068e4d"/>
-  <path d="M132.18,186.12c16.74-4.27,44.58-10,72.81-10,44.53,0,73.26,6.43,73.61,14.38,0,0.17,0,.34,0,0.51-0.85,7.86-29.45,14.17-73.6,14.17-28.23,0-56.07-5.76-72.81-10-3.79-1-5.79-2.53-6-4.13l0-.51c0.13-1.69,2.15-3.36,6.1-4.37" transform="translate(-40.77 -69.46)" fill="#25b774"/>
-  <path d="M123.23,173.34h9.16a3.29,3.29,0,0,1,3.29,3.3v5.71a3.29,3.29,0,0,1-3.29,3.3H115.57a1.32,1.32,0,0,1-1.32-1.32v-2a9,9,0,0,1,9-9" transform="translate(-40.77 -69.46)" fill="#068e4d"/>
-  <path d="M123.23,173.34h9.16a3.29,3.29,0,0,1,3.29,3.3v5.71a3.29,3.29,0,0,1-3.29,3.3H115.57a1.32,1.32,0,0,1-1.32-1.32v-2A9,9,0,0,1,123.23,173.34Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M123.23,207.39h9.16a3.29,3.29,0,0,0,3.29-3.3v-5.71a3.29,3.29,0,0,0-3.29-3.3H115.57a1.32,1.32,0,0,0-1.32,1.32v2a9,9,0,0,0,9,9" transform="translate(-40.77 -69.46)" fill="#068e4d"/>
-  <path d="M123.23,207.39h9.16a3.29,3.29,0,0,0,3.29-3.3v-5.71a3.29,3.29,0,0,0-3.29-3.3H115.57a1.32,1.32,0,0,0-1.32,1.32v2A9,9,0,0,0,123.23,207.39Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M123.23,173.34h9.16a3.29,3.29,0,0,1,3.29,3.3v5.71a3.29,3.29,0,0,1-3.29,3.3H115.57a1.32,1.32,0,0,1-1.32-1.32v-2a9,9,0,0,1,9-9" transform="translate(-40.77 -69.46)" fill="#068e4d"/>
-  <path d="M123.23,173.34h9.16a3.29,3.29,0,0,1,3.29,3.3v5.71a3.29,3.29,0,0,1-3.29,3.3H115.57a1.32,1.32,0,0,1-1.32-1.32v-2A9,9,0,0,1,123.23,173.34Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M123.23,207.39h9.16a3.29,3.29,0,0,0,3.29-3.3v-5.71a3.29,3.29,0,0,0-3.29-3.3H115.57a1.32,1.32,0,0,0-1.32,1.32v2a9,9,0,0,0,9,9" transform="translate(-40.77 -69.46)" fill="#068e4d"/>
-  <path d="M123.23,207.39h9.16a3.29,3.29,0,0,0,3.29-3.3v-5.71a3.29,3.29,0,0,0-3.29-3.3H115.57a1.32,1.32,0,0,0-1.32,1.32v2A9,9,0,0,0,123.23,207.39Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <line x1="28.18" y1="38.34" x2="91.09" y2="38.34" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-  <path d="M41.77,97.54H77.06a12.4,12.4,0,1,1,24.8,0h17.93" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-  <line x1="218.19" y1="23.72" x2="257.97" y2="23.72" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-  <path d="M278.75,82.91H251.39a12.4,12.4,0,1,0-24.8,0H208.65" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-  <line x1="246.24" y1="13.45" x2="268.43" y2="13.45" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-  <line x1="65.48" y1="110.03" x2="43.28" y2="110.03" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-  <line x1="65.48" y1="131.77" x2="43.28" y2="131.77" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-  <line x1="65.48" y1="121.52" x2="28" y2="121.52" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-  <path d="M289.94,327.88H244.88L212.8,296.58a1.89,1.89,0,0,0-2.44,0l-10.2,10.23a1.72,1.72,0,0,1-2.25,0l-19-20.17a2.4,2.4,0,0,0-3.1,0l-26.42,25.64a1.71,1.71,0,0,1-2.25,0l-2.63-2.92a1.71,1.71,0,0,0-2.31,0L124.63,329H80.78" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-  <path d="M289.94,328H200.15c-0.86,0-1.56,0-2.25,0h-19c-1.5,0-2.23,0-3.1,0h-32.3c-1.09,0-1.66,0-2.31,0H80.78" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+<svg viewBox="0 0 269.43 260.54" xmlns="http://www.w3.org/2000/svg">
+  <g id="airshipStage">
+    <g id="airship">
+      <g id="airshipBody">
+        <g id="backBlades">
+          <g id="topBackBlade">
+            <path d="M123.23,173.34h9.16a3.29,3.29,0,0,1,3.29,3.3v5.71a3.29,3.29,0,0,1-3.29,3.3H115.57a1.32,1.32,0,0,1-1.32-1.32v-2a9,9,0,0,1,9-9" transform="translate(-40.77 -69.46)" fill="#068e4d"/>
+            <path d="M123.23,173.34h9.16a3.29,3.29,0,0,1,3.29,3.3v5.71a3.29,3.29,0,0,1-3.29,3.3H115.57a1.32,1.32,0,0,1-1.32-1.32v-2A9,9,0,0,1,123.23,173.34Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+
+          <g id="bottomBackBlade">
+            <path d="M123.23,207.39h9.16a3.29,3.29,0,0,0,3.29-3.3v-5.71a3.29,3.29,0,0,0-3.29-3.3H115.57a1.32,1.32,0,0,0-1.32,1.32v2a9,9,0,0,0,9,9" transform="translate(-40.77 -69.46)" fill="#068e4d"/>
+            <path d="M123.23,207.39h9.16a3.29,3.29,0,0,0,3.29-3.3v-5.71a3.29,3.29,0,0,0-3.29-3.3H115.57a1.32,1.32,0,0,0-1.32,1.32v2A9,9,0,0,0,123.23,207.39Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="0 0; 0 3; 0 0; 0 -3; 0 0"
+            dur="2s"
+            calcMode="paced"
+            repeatCount="indefinite"
+          />
+        </g>
+
+        <g class="airshipCabin">
+          <path d="M175.44,249.28h48.36a13.27,13.27,0,0,0,13-10.65l3.74-18.32H172.36v25.89A3.09,3.09,0,0,0,175.44,249.28Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path d="M235.79,241.69h-9.22a8.31,8.31,0,0,1-8.28-8.31V220.31" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+
+          <g id="airshipOutsideWindow">
+            <path d="M204.25,231.88h-2.05a3.45,3.45,0,0,0-3.43,3.45v2.92a3.45,3.45,0,0,0,3.43,3.45h2.05a3.45,3.45,0,0,0,3.43-3.45v-2.92A3.44,3.44,0,0,0,204.25,231.88Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+
+            <animate
+              id="airshipOutsideWindowHide"
+              attributeType="CSS"
+              attributeName="opacity"
+              from="1"
+              to="0"
+              dur="0.01s"
+              begin="cloudSecondTransform.end - 0.4s"
+              fill="freeze"
+            />
+          </g>
+
+          <path d="M185.64,231.88h-2.05a3.45,3.45,0,0,0-3.43,3.45v2.92a3.45,3.45,0,0,0,3.43,3.45h2.05a3.45,3.45,0,0,0,3.43-3.45v-2.92A3.45,3.45,0,0,0,185.64,231.88Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+
+          <animateTransform
+            attributeName="transform"
+            type="scale"
+            values="1 1; 1 0.98; 1 1; 1 0.98; 1 1"
+            dur="2s"
+            additive="sum"
+            calcMode="paced"
+            repeatCount="indefinite"
+          />
+
+          <animateTransform
+            attributeName="transform"
+            type="skewX"
+            values="0; 1; 0; -1; 0"
+            dur="2s"
+            additive="sum"
+            calcMode="paced"
+            repeatCount="indefinite"
+          />
+        </g>
+
+        <path d="M205,227.08c43.38,0,74.86-15.55,74.86-37s-31.48-37-74.86-37c-27.94,0-55.36,13.53-73.46,24.87a14.3,14.3,0,0,0,0,24.21c18.09,11.33,45.52,24.87,73.46,24.87" transform="translate(-40.77 -69.46)" fill="#068e4d"/>
+        <path d="M205,227.08c43.38,0,74.86-15.55,74.86-37s-31.48-37-74.86-37c-27.94,0-55.36,13.53-73.46,24.87a14.3,14.3,0,0,0,0,24.21C149.63,213.54,177.06,227.08,205,227.08Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-width="2"/>
+
+        <path d="M86.842 114.441C85.7764 116.448 85.4184 118.709 85.5 120.98H237.86C237.86 101.23 209.03 84.86 164.22 84.86C135.99 84.86 108.15 99.04 91.41 109.54C89.4832 110.744 87.9077 112.434 86.842 114.441Z" fill="#36e69a"/>
+
+        <path d="M132.18,195.12c16.74,4.27,44.58,10,72.81,10,44.14,0,72.75-6.32,73.6-14.18-0.86,19.34-29.45,34.86-73.6,34.86-28.23,0-56.07-14.19-72.81-24.68a12.88,12.88,0,0,1-6-10.18c0.26,1.61,2.26,3.18,6,4.14" transform="translate(-40.77 -69.46)" fill="#068e4d"/>
+        <path d="M91.41 116.66C108.15 112.39 135.99 106.66 164.22 106.66C208.75 106.66 237.48 113.09 237.83 121.04C237.83 121.21 237.83 121.38 237.83 121.55C236.98 129.41 208.38 135.72 164.23 135.72C136 135.72 108.16 129.96 91.42 125.72C87.63 124.72 85.63 123.19 85.42 121.59V121.08C85.55 119.39 87.57 117.72 91.52 116.71"  fill="#25b774">
+          <animate
+            attributeName="d"
+            values="
+                        M91.41 116.66C108.15 112.39 135.99 106.66 164.22 106.66C208.75 106.66 237.48 113.09 237.83 121.04C237.83 121.21 237.83 121.38 237.83 121.55C236.98 129.41 208.38 135.72 164.23 135.72C136 135.72 108.16 129.96 91.42 125.72C87.63 124.72 85.63 123.19 85.42 121.59V121.08C85.55 119.39 87.57 117.72 91.52 116.71;
+                        M91.41 116.66C108 109 134.99 100.66 163.22 100.66C207.75 100.66 237.48 113.09 237.83 121.04C237.83 121.21 237.83 121.38 237.83 121.55C236.98 129.41 208.38 131.72 164.23 131.72C136 131.72 108.16 129.96 91.42 125.72C87.63 124.72 85.63 123.19 85.42 121.59V121.08C85.55 119.39 87.57 117.72 91.52 116.71;
+                        M91.41 116.66C108.15 112.39 135.99 106.66 164.22 106.66C208.75 106.66 237.48 113.09 237.83 121.04C237.83 121.21 237.83 121.38 237.83 121.55C236.98 129.41 208.38 135.72 164.23 135.72C136 135.72 108.16 129.96 91.42 125.72C87.63 124.72 85.63 123.19 85.42 121.59V121.08C85.55 119.39 87.57 117.72 91.52 116.71;
+                        M91.41 116.66C108.15 112.39 135.99 109.66 164.22 109.66C195.5 109.66 237.48 113.09 237.83 121.04C237.83 121.21 237.83 121.38 237.83 121.55C236.98 129.41 208.38 139.72 164.23 139.72C136 139.72 108 132 91.42 125.72C87.5 124 85.63 123.19 85.42 121.59V121.08C85.55 119.39 87.57 117.72 91.52 116.71;
+                        M91.41 116.66C108.15 112.39 135.99 106.66 164.22 106.66C208.75 106.66 237.48 113.09 237.83 121.04C237.83 121.21 237.83 121.38 237.83 121.55C236.98 129.41 208.38 135.72 164.23 135.72C136 135.72 108.16 129.96 91.42 125.72C87.63 124.72 85.63 123.19 85.42 121.59V121.08C85.55 119.39 87.57 117.72 91.52 116.71;"
+            dur="2s"
+            calcMode="paced"
+            repeatCount="indefinite"
+          />
+        </path>
+
+        <g id="frontBlades">
+          <g id="topFrontBlade">
+            <path d="M123.23,173.34h9.16a3.29,3.29,0,0,1,3.29,3.3v5.71a3.29,3.29,0,0,1-3.29,3.3H115.57a1.32,1.32,0,0,1-1.32-1.32v-2a9,9,0,0,1,9-9" transform="translate(-40.77 -69.46)" fill="#068e4d"/>
+            <path d="M123.23,173.34h9.16a3.29,3.29,0,0,1,3.29,3.3v5.71a3.29,3.29,0,0,1-3.29,3.3H115.57a1.32,1.32,0,0,1-1.32-1.32v-2A9,9,0,0,1,123.23,173.34Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+
+          <g id="bottomFrontBlade">
+            <path d="M123.23,207.39h9.16a3.29,3.29,0,0,0,3.29-3.3v-5.71a3.29,3.29,0,0,0-3.29-3.3H115.57a1.32,1.32,0,0,0-1.32,1.32v2a9,9,0,0,0,9,9" transform="translate(-40.77 -69.46)" fill="#068e4d"/>
+            <path d="M123.23,207.39h9.16a3.29,3.29,0,0,0,3.29-3.3v-5.71a3.29,3.29,0,0,0-3.29-3.3H115.57a1.32,1.32,0,0,0-1.32,1.32v2A9,9,0,0,0,123.23,207.39Z" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="0 0; 0 -3; 0 0; 0 3; 0 0"
+            dur="2s"
+            calcMode="paced"
+            repeatCount="indefinite"
+          />
+        </g>
+      </g>
+
+      <g id="airTrack">
+        <line x1="65.48" y1="110.03" x2="43.28" y2="110.03" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+          <animate
+            attributeType="XML"
+            attributeName="x2"
+            values="43.28; 50; 43.28"
+            begin="0s"
+            dur="0.2s"
+            repeatCount="indefinite"
+          />
+        </line>
+        <line x1="65.48" y1="131.77" x2="43.28" y2="131.77" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+          <animate
+            attributeType="XML"
+            attributeName="x2"
+            values="43.28; 50; 43.28"
+            begin="0s"
+            dur="0.3s"
+            repeatCount="indefinite"
+          />
+        </line>
+        <line x1="65.48" y1="121.52" x2="28" y2="121.52" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+          <animate
+            attributeType="XML"
+            attributeName="x2"
+            values="28; 40; 28"
+            begin="0s"
+            dur="0.3s"
+            repeatCount="indefinite"
+          />
+        </line>
+      </g>
+
+      <animate
+        attributeType="CSS"
+        attributeName="opacity"
+        from="1"
+        to="0"
+        dur="0.5s"
+        begin="airshipInsideWindowShow.end"
+        fill="freeze"
+      />
+    </g>
+
+    <g id="cloudFirst">
+      <line x1="28.18" y1="38.34" x2="91.09" y2="38.34" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+            transform="translate(250, 0)">
+        <animateTransform
+          attributeType="XML" attributeName="transform" type="translate"
+          dur="2.3s"
+          to="-50"
+          fill="freeze"
+        />
+        <animate
+          attributeType="CSS"
+          attributeName="opacity"
+          begin="cloudFirstTransform.end - 0.3s"
+          dur="0.3s"
+          from="1"
+          to="0"
+          fill="freeze"
+        />
+      </line>
+      <path d="M41.77,97.54H77.06a12.4,12.4,0,1,1,24.8,0h17.93" transform="translate(200 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+        <animateTransform
+          id="cloudFirstTransform"
+          attributeType="XML" attributeName="transform" type="translate"
+          dur="2s"
+          to="-50 -69.46"
+          fill="freeze"
+        />
+        <animate
+          id="cloudFirstHide"
+          attributeType="CSS"
+          attributeName="opacity"
+          begin="cloudFirstTransform.end - 0.3s"
+          dur="0.3s"
+          from="1"
+          to="0"
+          fill="freeze"
+        />
+      </path>
+    </g>
+
+    <g id="cloudSecond">
+      <line x1="218.19" y1="23.72" x2="257.97" y2="23.72" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" opacity="0">
+        <animate
+          id="cloudSecondShow"
+          attributeType="CSS"
+          attributeName="opacity"
+          begin="cloudFirstHide.end - 0.5s"
+          dur="0.01s"
+          from="0"
+          to="1"
+          fill="freeze"
+        />
+
+        <animateTransform
+          attributeType="XML" attributeName="transform" type="translate"
+          begin="cloudFirstHide.end - 0.5s"
+          dur="1.9s"
+          to="-150"
+          fill="freeze"
+          additive="sum"
+        />
+
+        <animate
+          attributeType="CSS"
+          attributeName="opacity"
+          begin="cloudSecondTransform.end - 0.3s"
+          dur="0.3s"
+          from="1"
+          to="0"
+          fill="freeze"
+        />
+      </line>
+
+      <g opacity="0">
+        <path d="M278.75,82.91H251.39a12.4,12.4,0,1,0-24.8,0H208.65" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="246.24" y1="13.45" x2="268.43" y2="13.45" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+
+        <animate
+          attributeType="CSS"
+          attributeName="opacity"
+          begin="cloudFirstHide.end - 0.5s"
+          dur="0.1s"
+          from="0"
+          to="1"
+          fill="freeze"
+        />
+        <animateTransform
+          id="cloudSecondTransform"
+          attributeType="XML" attributeName="transform" type="translate"
+          begin="cloudFirstHide.end - 0.5s"
+          dur="1.7s"
+          to="-150"
+          fill="freeze"
+          additive="sum"
+        />
+        <animate
+          attributeType="CSS"
+          attributeName="opacity"
+          begin="cloudSecondTransform.end - 0.3s"
+          dur="0.3s"
+          from="1"
+          to="0"
+          fill="freeze"
+        />
+      </g>
+    </g>
+
+    <g id="mountain">
+      <path d="M249.17 258.42H204.11L172.03 227.12C171.689 226.832 171.257 226.674 170.81 226.674C170.363 226.674 169.931 226.832 169.59 227.12L159.39 237.35C159.077 237.62 158.678 237.769 158.265 237.769C157.852 237.769 157.453 237.62 157.14 237.35L138.14 217.18C137.707 216.813 137.158 216.612 136.59 216.612C136.022 216.612 135.473 216.813 135.04 217.18L108.62 242.82C108.308 243.092 107.909 243.242 107.495 243.242C107.081 243.242 106.682 243.092 106.37 242.82L103.74 239.9C103.425 239.611 103.013 239.451 102.585 239.451C102.157 239.451 101.745 239.611 101.43 239.9L83.86 259.54H40.01" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+        <animate
+          id="mountainDown"
+          attributeType="XML"
+          attributeName="d"
+          begin="cloudSecondTransform.end - 1s"
+          from="M249.17 258.42H204.11L172.03 227.12C171.689 226.832 171.257 226.674 170.81 226.674C170.363 226.674 169.931 226.832 169.59 227.12L159.39 237.35C159.077 237.62 158.678 237.769 158.265 237.769C157.852 237.769 157.453 237.62 157.14 237.35L138.14 217.18C137.707 216.813 137.158 216.612 136.59 216.612C136.022 216.612 135.473 216.813 135.04 217.18L108.62 242.82C108.308 243.092 107.909 243.242 107.495 243.242C107.081 243.242 106.682 243.092 106.37 242.82L103.74 239.9C103.425 239.611 103.013 239.451 102.585 239.451C102.157 239.451 101.745 239.611 101.43 239.9L83.86 259.54H40.01"
+          to="M249.17 258.42H204.11L172.03 258.12C171.689 257.832 171.257 257.674 170.81 257.674C170.363 257.674 169.931 257.832 169.59 258.12L159.39 258.35C159.077 258.62 158.678 258.769 158.265 258.769C157.852 258.769 157.453 258.62 157.14 258.35L138.14 258.18C137.707 257.813 137.158 257.612 136.59 257.612C136.022 257.612 135.473 257.813 135.04 258.18L108.62 258.82C108.308 259.092 107.909 259.242 107.495 259.242C107.081 259.242 106.682 259.092 106.37 258.82L103.74 258.9C103.425 258.611 103.013 258.451 102.585 258.451C102.157 258.451 101.745 258.611 101.43 258.9L83.86 259.54H40.01"
+          dur="1s"
+          fill="freeze"
+        />
+
+        <animate
+          attributeType="CSS"
+          attributeName="opacity"
+          from="1"
+          to="0"
+          dur="0.01s"
+          begin="mountainDown.end"
+          fill="freeze"
+        />
+      </path>
+    </g>
+  </g>
+
+  <g id="seatStage" transform="translate(8, 35)">
+    <g id="skiing" opacity="0" transform="translate(-75, 0)">
+      <path d="M91.14,327.79a2.2,2.2,0,0,1-2-2.36l13.66-193.17c1.1-15.49-4.8-21.92-8.75-24.47a1.35,1.35,0,0,1,.53-2.45C103,104,122.18,104,120,134.19L106.43,326.67a2.2,2.2,0,0,1-2.35,2Z" transform="translate(-54.48 -104.9)" fill="#fff"/>
+      <path d="M124.5,328.17a2.2,2.2,0,0,1-2.17-2.23l2.24-193.63c0.19-15.53-6.07-21.61-10.16-23.91a1.35,1.35,0,0,1,.39-2.47c8.36-1.9,27.49-3,27.15,27.28l-2.25,192.93a2.2,2.2,0,0,1-2.22,2.18Z" transform="translate(-54.48 -104.9)" fill="#fff"/>
+
+      <animateTransform
+        attributeType="XML" attributeName="transform" type="translate"
+        begin="armchairShow.end"
+        dur="0.2s"
+        to="0, 0"
+        keyTimes="0; 1"
+        keySplines="0.53 0.78 0.46 1"
+        fill="freeze"
+      />
+
+      <animate
+        attributeType="CSS"
+        attributeName="opacity"
+        from="0"
+        to="1"
+        dur="0.2s"
+        begin="armchairShow.end"
+        fill="freeze"
+      />
+    </g>
+
+    <g id="airshipInsideWindow">
+      <path d="M156.979 137H154.023C153.221 136.997 152.452 136.742 151.886 136.291C151.319 135.84 151.001 135.229 151 134.592V129.408C151.001 128.771 151.319 128.16 151.886 127.709C152.452 127.258 153.221 127.003 154.023 127H156.979C157.781 127.003 158.549 127.258 159.115 127.709C159.681 128.161 159.999 128.771 160 129.408V134.589C160 135.226 159.682 135.838 159.116 136.289C158.549 136.741 157.781 136.996 156.979 137V137Z" fill="none" stroke="white" stroke-width="2" opacity="0">
+        <animate
+          id="airshipInsideWindowShow"
+          attributeType="CSS"
+          attributeName="opacity"
+          from="0"
+          to="1"
+          dur="0.01s"
+          begin="airshipOutsideWindowHide.end"
+          fill="freeze"
+        />
+
+        <animate
+          id="airshipInsideWindowIncrease"
+          attributeType="XML"
+          attributeName="d"
+          begin="airshipInsideWindowShow.end"
+          from="M156.979 137H154.023C153.221 136.997 152.452 136.742 151.886 136.291C151.319 135.84 151.001 135.229 151 134.592V129.408C151.001 128.771 151.319 128.16 151.886 127.709C152.452 127.258 153.221 127.003 154.023 127H156.979C157.781 127.003 158.549 127.258 159.115 127.709C159.681 128.161 159.999 128.771 160 129.408V134.589C160 135.226 159.682 135.838 159.116 136.289C158.549 136.741 157.781 136.996 156.979 137V137Z"
+          to="M220.52 120.53H203.39C198.74 120.509 194.286 118.648 191.004 115.354C187.721 112.06 185.875 107.601 185.87 102.95V65.1C185.875 60.4495 187.721 55.9901 191.004 52.696C194.286 49.402 198.74 47.5412 203.39 47.52H220.52C225.169 47.5438 229.619 49.4058 232.9 52.6996C236.181 55.9933 238.025 60.4512 238.03 65.1V102.93C238.027 107.581 236.185 112.043 232.904 115.34C229.623 118.638 225.171 120.504 220.52 120.53V120.53Z"
+          dur="0.3s"
+          fill="freeze"
+        />
+      </path>
+    </g>
+
+    <g id="armchair" opacity="0" transform="translate(-75, 0)">
+      <path d="M257.5,259.82H196.76V245.63h55.09a9.92,9.92,0,0,1,9.9,9.93,4.26,4.26,0,0,1-4.25,4.25" transform="translate(-54.48 -104.9)" fill="#a67ee5"/>
+      <path d="M257.5,259.82H196.76V245.63h55.09a9.92,9.92,0,0,1,9.9,9.93A4.26,4.26,0,0,1,257.5,259.82Z" transform="translate(-54.48 -104.9)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      <polygon points="130.99 223.41 117.02 223.41 110.71 181.82 124.68 181.82 130.99 223.41" fill="#a67ee5"/>
+      <polygon points="130.99 223.41 117.02 223.41 110.71 181.82 124.68 181.82 130.99 223.41" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      <polygon points="180.54 223.41 166.58 223.41 160.28 181.82 174.24 181.82 180.54 223.41" fill="#a67ee5"/>
+      <polygon points="180.54 223.41 166.58 223.41 160.28 181.82 174.24 181.82 180.54 223.41" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      <path d="M281.33,272.45H225.44a5.59,5.59,0,0,1-5.53-4.77l-10.86-72.24a17.71,17.71,0,0,0-12.49-31.31H141.48L141.16,267l15.77,23.35,47.19,8.39a12.3,12.3,0,0,0,4.22.75h73a13.53,13.53,0,0,0,0-27.06" transform="translate(-54.48 -104.9)" fill="#a67ee5"/>
+      <path d="M281.33,272.45H225.44a5.59,5.59,0,0,1-5.53-4.77l-10.86-72.24a17.71,17.71,0,0,0-12.49-31.31H141.48L141.16,267l15.77,23.35,47.19,8.39a12.3,12.3,0,0,0,4.22.75h73A13.53,13.53,0,0,0,281.33,272.45Z" transform="translate(-54.48 -104.9)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      <path d="M162.42,267.69l-10.86-72.24a17.71,17.71,0,1,0-29-13.61,18,18,0,0,0,.79,5.25L138.65,289a12.36,12.36,0,0,0,12.21,10.54h73a13.53,13.53,0,0,0,0-27.05H167.95a5.62,5.62,0,0,1-5.53-4.78" transform="translate(-54.48 -104.9)" fill="#a67ee5"/>
+      <path d="M162.42,267.69l-10.86-72.24a17.71,17.71,0,1,0-29-13.61,18,18,0,0,0,.79,5.25L138.65,289a12.36,12.36,0,0,0,12.21,10.54h73a13.53,13.53,0,0,0,0-27.05H167.95A5.62,5.62,0,0,1,162.42,267.69Z" transform="translate(-54.48 -104.9)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      <path d="M206.26,259.82h-72l-2.13-14.19H200.6a9.92,9.92,0,0,1,9.9,9.93,4.26,4.26,0,0,1-4.25,4.25" transform="translate(-54.48 -104.9)" fill="#a67ee5"/>
+      <path d="M206.26,259.82h-72l-2.13-14.19H200.6a9.92,9.92,0,0,1,9.9,9.93A4.26,4.26,0,0,1,206.26,259.82Z" transform="translate(-54.48 -104.9)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      <line x1="97.08" y1="90.54" x2="154.57" y2="90.54" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+
+      <animateTransform
+        attributeType="XML" attributeName="transform" type="translate"
+        begin="airshipInsideWindowIncrease.end"
+        dur="0.2s"
+        to="0, 0"
+        keyTimes="0; 1"
+        keySplines="0.53 0.78 0.46 1"
+        fill="freeze"
+      />
+
+      <animate
+        id="armchairShow"
+        attributeType="CSS"
+        attributeName="opacity"
+        from="0"
+        to="1"
+        dur="0.2s"
+        begin="airshipInsideWindowIncrease.end"
+        fill="freeze"
+      />
+    </g>
+
+    <g id="palm" opacity="0" transform="translate(-75, 0)">
+      <path d="M79.18,194A131,131,0,0,1,94.77,220.9a255,255,0,0,1-20.08-23.55,259,259,0,0,1-17.07-25.88A131.72,131.72,0,0,1,79.18,194" transform="translate(-54.48 -104.9)" fill="#36e69a"/>
+      <path d="M80.94,214.39a127.19,127.19,0,0,1,22.8,20.49A242.09,242.09,0,0,1,77.9,219.17a235.86,235.86,0,0,1-23.42-18.7,119.82,119.82,0,0,1,26.46,13.92" transform="translate(-54.48 -104.9)" fill="#36e69a"/>
+      <path d="M93.66,205.48a258.38,258.38,0,0,0,10.08,29.39,125.63,125.63,0,0,0-4.5-30.52,135.9,135.9,0,0,0-12.06-29.44,260.33,260.33,0,0,0,6.47,30.57" transform="translate(-54.48 -104.9)" fill="#36e69a"/>
+      <path d="M107.32,213.52a250.14,250.14,0,0,0,2.06,30.67,119.93,119.93,0,0,0,3.76-30.05,131.24,131.24,0,0,0-4-31.36,238.1,238.1,0,0,0-1.87,30.74" transform="translate(-54.48 -104.9)" fill="#25b774"/>
+      <path d="M83.08,229.56a121.93,121.93,0,0,1,26.29,14.64A225.91,225.91,0,0,1,81.21,235a228.11,228.11,0,0,1-26.37-12.69,113.61,113.61,0,0,1,28.25,7.29" transform="translate(-54.48 -104.9)" fill="#25b774"/>
+      <path d="M88.06,243.83A118.11,118.11,0,0,1,115.62,255a211,211,0,0,1-28.78-5.6,220.87,220.87,0,0,1-27.42-9.33,114,114,0,0,1,28.65,3.73" transform="translate(-54.48 -104.9)" fill="#25b774"/>
+      <path d="M118.71,224.79a238,238,0,0,0-3.1,30.25,117.11,117.11,0,0,0,8.82-28.54,127.44,127.44,0,0,0,1.42-31.19,213.92,213.92,0,0,0-7.15,29.48" transform="translate(-54.48 -104.9)" fill="#25b774"/>
+      <path d="M98.86,262a118.24,118.24,0,0,1,27.07,12.34,212.3,212.3,0,0,1-28.53-6.79,220.78,220.78,0,0,1-27-10.45A114.06,114.06,0,0,1,98.86,262" transform="translate(-54.48 -104.9)" fill="#068e4d"/>
+      <path d="M130.27,244.29a236.56,236.56,0,0,0-4.34,30.1,116.94,116.94,0,0,0,10-28.16,127.42,127.42,0,0,0,2.71-31.1,214.43,214.43,0,0,0-8.36,29.16" transform="translate(-54.48 -104.9)" fill="#068e4d"/>
+      <path d="M108.9,280.69a118.21,118.21,0,0,1,26.54,13.47,213.62,213.62,0,0,1-28.23-8,221.65,221.65,0,0,1-26.55-11.57,113.82,113.82,0,0,1,28.24,6.08" transform="translate(-54.48 -104.9)" fill="#068e4d"/>
+      <path d="M141,264.26a236.09,236.09,0,0,0-5.58,29.9,117.46,117.46,0,0,0,11.15-27.73,127.2,127.2,0,0,0,4-31A214.24,214.24,0,0,0,141,264.26" transform="translate(-54.48 -104.9)" fill="#068e4d"/>
+      <path d="M38.14 112.77C61.355 147.189 80.4395 184.22 95 223.1" fill="none" stroke="#36E69A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <animateTransform
+        attributeType="XML" attributeName="transform" type="translate"
+        begin="armchairShow.end"
+        dur="0.2s"
+        to="0, 0"
+        keyTimes="0; 1"
+        keySplines="0.53 0.78 0.46 1"
+        fill="freeze"
+      />
+
+      <animate
+        id="palmShow"
+        attributeType="CSS"
+        attributeName="opacity"
+        from="0"
+        to="1"
+        dur="0.2s"
+        begin="armchairShow.end"
+        fill="freeze"
+      />
+
+      <animateTransform
+        attributeType="XML" attributeName="transform" type="rotate"
+        begin="palmShow.end - 0.1s"
+        values="0 95 223; 5 95 223; 0 95 223"
+        dur="0.5s"
+        additive="sum"
+        fill="freeze"
+      />
+    </g>
+
+    <line x1="17.55" y1="224.1" x2="241.04" y2="224.1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" opacity="0">
+      <animate
+        attributeType="CSS"
+        attributeName="opacity"
+        from="0"
+        to="1"
+        dur="0.01s"
+        begin="mountainDown.end"
+        fill="freeze"
+      />
+    </line>
+    <defs>
+      <clipPath id="window" transform="translate(0 -70)">
+        <path d="M275,225.43H257.87a17.6,17.6,0,0,1-17.52-17.58V170a17.6,17.6,0,0,1,17.52-17.58H275A17.6,17.6,0,0,1,292.51,170v37.83A17.61,17.61,0,0,1,275,225.43Z" transform="translate(-54.48 -104.9)"/>
+      </clipPath>
+    </defs>
+
+    <g transform="translate(0 70)" clip-path="url(#window)">
+      <g transform="scale(0.5) translate(485, 0)">
+        <line x1="28.18" y1="38.34" x2="91.09" y2="38.34" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <path d="M41.77,97.54H77.06a12.4,12.4,0,1,1,24.8,0h17.93" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+
+        <animateTransform
+          id="firstOutsideCloudTranslate"
+          attributeType="XML" attributeName="transform" type="translate"
+          begin="airshipInsideWindowIncrease.end"
+          dur="1s"
+          from="0 0"
+          to="-210, 0"
+          additive="sum"
+          fill="freeze"
+        />
+      </g>
+
+      <g transform="scale(0.5) translate(320, 0)">
+        <line x1="218.19" y1="23.72" x2="257.97" y2="23.72" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <path d="M278.75,82.91H251.39a12.4,12.4,0,1,0-24.8,0H208.65" transform="translate(-40.77 -69.46)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <line x1="246.24" y1="13.45" x2="268.43" y2="13.45" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+
+        <animateTransform
+          id="firstOutsideCloudTranslate"
+          attributeType="XML" attributeName="transform" type="translate"
+          begin="firstOutsideCloudTranslate.end"
+          dur="1s"
+          from="0 0"
+          to="-220, 0"
+          additive="sum"
+          fill="freeze"
+        />
+      </g>
+    </g>
+  </g>
 </svg>
