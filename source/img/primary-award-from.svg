@@ -410,12 +410,24 @@
       />
 
       <animateTransform
+        id="palmRotateWithTranslate"
         attributeType="XML" attributeName="transform" type="rotate"
         begin="palmShow.end - 0.1s"
         values="0 95 223; 5 95 223; 0 95 223"
         dur="0.5s"
         additive="sum"
         fill="freeze"
+      />
+
+      <animateTransform
+        id="palmRotate"
+        attributeType="XML" attributeName="transform" type="rotate"
+        begin="palmRotateWithTranslate.end"
+        values="0 95 223; 4 95 223; 0 95 223"
+        dur="1.8s"
+        additive="sum"
+        fill="remove"
+        repeatCount="indefinite"
       />
     </g>
 
@@ -444,12 +456,12 @@
         <animateTransform
           id="firstOutsideCloudTranslate"
           attributeType="XML" attributeName="transform" type="translate"
-          begin="airshipInsideWindowIncrease.end"
+          begin="airshipInsideWindowIncrease.end; firstOutsideCloudTranslate.end + 1s"
           dur="1s"
           from="0 0"
           to="-210, 0"
           additive="sum"
-          fill="freeze"
+          fill="remove"
         />
       </g>
 
@@ -459,14 +471,14 @@
         <line x1="246.24" y1="13.45" x2="268.43" y2="13.45" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
 
         <animateTransform
-          id="firstOutsideCloudTranslate"
+          id="secondOutsideCloudTranslate"
           attributeType="XML" attributeName="transform" type="translate"
-          begin="firstOutsideCloudTranslate.end"
+          begin="airshipInsideWindowIncrease.end + 1s; secondOutsideCloudTranslate.end + 1s"
           dur="1s"
           from="0 0"
           to="-220, 0"
           additive="sum"
-          fill="freeze"
+          fill="remove"
         />
       </g>
     </g>
