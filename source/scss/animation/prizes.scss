@@ -1,0 +1,12 @@
+.prizes {
+  &__item {
+    .prizes__icon {
+      @media screen and (min-width: 1025px) {
+        left: initial;
+        bottom: initial;
+        width: 30rem;
+        max-width: 350px;
+      }
+    }
+  }
+}
