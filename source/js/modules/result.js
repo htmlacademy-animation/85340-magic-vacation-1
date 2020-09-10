@@ -14,6 +14,8 @@ export default () => {
         });
         targetEl[0].classList.add(`screen--show`);
         targetEl[0].classList.remove(`screen--hidden`);
+
+        animateResultTitle(targetEl[0]);
       });
     }
 
@@ -28,5 +30,28 @@ export default () => {
         document.getElementById(`message-field`).focus();
       });
     }
+  }
+
+  function animateResultTitle(resultBlock) {
+    const svgTitle = resultBlock.querySelector(`.js-svg-title`);
+    const svgId = svgTitle.querySelector(`use`).getAttribute(`xlink:href`);
+    const originSvg = document.querySelector(svgId);
+    const paths = originSvg.querySelectorAll(`path`);
+    const startAnimationEls = originSvg.querySelectorAll(`[begin="indefinite"]`);
+
+    paths.forEach(function (path, i, arr) {
+      const pathTotalLength = path.getTotalLength();
+      const pathAnimate = path.querySelector(`animate`);
+
+      path.setAttribute(`stroke-dashoffset`, `0`);
+      path.setAttribute(`stroke-dasharray`, `${arr.length} ${pathTotalLength / 2.36}`);
+
+      pathAnimate.setAttribute(`to`, `${pathTotalLength / 3} 0`);
+      // pathAnimate.beginElement();
+    });
+
+    startAnimationEls.forEach(function (el) {
+      el.beginElement();
+    });
   }
 };
