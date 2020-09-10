@@ -47,7 +47,6 @@ export default () => {
       path.setAttribute(`stroke-dasharray`, `${arr.length} ${pathTotalLength / 2.36}`);
 
       pathAnimate.setAttribute(`to`, `${pathTotalLength / 3} 0`);
-      // pathAnimate.beginElement();
     });
 
     startAnimationEls.forEach(function (el) {
