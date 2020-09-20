@@ -39,7 +39,7 @@ export default () => {
     const paths = originSvg.querySelectorAll(`path`);
     const startAnimationEls = originSvg.querySelectorAll(`[begin="indefinite"]`);
 
-    paths.forEach(function (path, i, arr) {
+    paths.forEach((path, i, arr) => {
       const pathTotalLength = path.getTotalLength();
       const pathAnimate = path.querySelector(`animate`);
 
@@ -49,7 +49,7 @@ export default () => {
       pathAnimate.setAttribute(`to`, `${pathTotalLength / 3} 0`);
     });
 
-    startAnimationEls.forEach(function (el) {
+    startAnimationEls.forEach((el) => {
       el.beginElement();
     });
   }
