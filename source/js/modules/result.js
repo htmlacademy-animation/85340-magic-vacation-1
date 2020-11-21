@@ -1,3 +1,9 @@
+import WinScene from '../animation/win-scene';
+
+const resultAnimations = {
+  result: new WinScene(),
+};
+
 export default () => {
   let showResultEls = document.querySelectorAll(`.js-show-result`);
   let results = document.querySelectorAll(`.screen--result`);
@@ -33,6 +39,7 @@ export default () => {
   }
 
   function animateResultTitle(resultBlock) {
+    const resultBlockId = resultBlock.id;
     const svgTitle = resultBlock.querySelector(`.js-svg-title`);
     const svgId = svgTitle.querySelector(`use`).getAttribute(`xlink:href`);
     const originSvg = document.querySelector(svgId);
@@ -52,5 +59,7 @@ export default () => {
     startAnimationEls.forEach((el) => {
       el.beginElement();
     });
+
+    resultAnimations[resultBlockId].run();
   }
 };
