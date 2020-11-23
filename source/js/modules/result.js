@@ -22,6 +22,7 @@ export default () => {
         targetEl[0].classList.remove(`screen--hidden`);
 
         animateResultTitle(targetEl[0]);
+        animateResultScene(targetEl[0].id);
       });
     }
 
@@ -39,7 +40,6 @@ export default () => {
   }
 
   function animateResultTitle(resultBlock) {
-    const resultBlockId = resultBlock.id;
     const svgTitle = resultBlock.querySelector(`.js-svg-title`);
     const svgId = svgTitle.querySelector(`use`).getAttribute(`xlink:href`);
     const originSvg = document.querySelector(svgId);
@@ -59,7 +59,13 @@ export default () => {
     startAnimationEls.forEach((el) => {
       el.beginElement();
     });
+  }
 
+  function animateResultScene(resultBlockId) {
     resultAnimations[resultBlockId].run();
+
+    window.addEventListener(`resize`, function () {
+      resultAnimations[resultBlockId].run();
+    });
   }
 };
