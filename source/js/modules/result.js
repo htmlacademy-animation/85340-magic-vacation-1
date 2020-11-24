@@ -1,3 +1,9 @@
+import WinScene from '../animation/win-scene';
+
+const resultAnimations = {
+  result: new WinScene(),
+};
+
 export default () => {
   let showResultEls = document.querySelectorAll(`.js-show-result`);
   let results = document.querySelectorAll(`.screen--result`);
@@ -16,6 +22,7 @@ export default () => {
         targetEl[0].classList.remove(`screen--hidden`);
 
         animateResultTitle(targetEl[0]);
+        animateResultScene(targetEl[0].id);
       });
     }
 
@@ -51,6 +58,14 @@ export default () => {
 
     startAnimationEls.forEach((el) => {
       el.beginElement();
+    });
+  }
+
+  function animateResultScene(resultBlockId) {
+    resultAnimations[resultBlockId].run();
+
+    window.addEventListener(`resize`, function () {
+      resultAnimations[resultBlockId].run();
     });
   }
 };

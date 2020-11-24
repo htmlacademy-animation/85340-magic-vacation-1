@@ -18,6 +18,24 @@
   }
 }
 
+.result {
+ &__canvas-wr {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: -1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ &__canvas {
+   margin: 0;
+ }
+}
+
 @keyframes scaleResultTitle {
   0% {
     transform: scale(1.5);
