@@ -8,6 +8,8 @@ export const back = (x) => (timeFraction) => {
   return Math.pow(timeFraction, 2) * ((x + 1) * timeFraction - x);
 };
 
+export const power = (n) => (timeFraction) => Math.pow(timeFraction, n);
+
 export const makeEaseOut = (timing) => {
   return (timeFraction) => {
     return 1 - timing(1 - timeFraction);

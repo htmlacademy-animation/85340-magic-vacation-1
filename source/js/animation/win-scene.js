@@ -19,44 +19,48 @@ export default class WinScene {
     this.canvas.height = WH;
   }
 
+  getScenes() {
+    return {
+      airplane: new Airplane(this.ctx, AIRPLANE_DURATION, {
+        src: `${IMG_PATH}airplane.png`,
+        size: Math.round(percentOf(WW, 9.5))
+      }),
+
+      calf: new Calf(this.ctx, CALF_DURATION, {
+        src: `${IMG_PATH}sea-calf-on-ice.png`,
+        size: Math.round(percentOf(WW, 35)),
+        angle: 30
+      }),
+
+      snowflakeLeft: new Snowflake(this.ctx, this.duration, {
+        src: `${IMG_PATH}snowflake.png`,
+        size: Math.round(percentOf(WW, 10)),
+        position: {
+          x: WW / 2 - percentOf(WW, 23.7),
+          y: WH / 2,
+          offset: percentOf(WH, 1.2)
+        },
+        skew: 0.3,
+        timeout: 0
+      }),
+
+      snowflakeRight: new Snowflake(this.ctx, this.duration - 300, {
+        src: `${IMG_PATH}snowflake.png`,
+        size: Math.round(percentOf(WW, 8)),
+        position: {
+          x: WW / 2 + percentOf(WW, 21),
+          y: WH / 2 + percentOf(WH, 22.5),
+          offset: percentOf(WH, 1.5)
+        },
+        skew: 0.2,
+        rotate: 180,
+        timeout: 300
+      })
+    };
+  }
+
   run() {
-    const scenes = {};
-
-    scenes.calf = new Calf(this.ctx, CALF_DURATION, {
-      src: `${IMG_PATH}sea-calf-on-ice.png`,
-      size: Math.round(percentOf(WW, 35)),
-      angle: 30
-    });
-
-    scenes.airplane = new Airplane(this.ctx, AIRPLANE_DURATION, {
-      src: `${IMG_PATH}airplane.png`,
-      size: Math.round(percentOf(WW, 9.5))
-    });
-
-    scenes.snowflakeLeft = new Snowflake(this.ctx, this.duration, {
-      src: `${IMG_PATH}snowflake.png`,
-      size: Math.round(percentOf(WW, 10)),
-      position: {
-        x: WW / 2 - percentOf(WW, 23.7),
-        y: WH / 2,
-        offset: percentOf(WH, 1.2)
-      },
-      skew: 0.3,
-      timeout: 0
-    });
-
-    scenes.snowflakeRight = new Snowflake(this.ctx, this.duration - 300, {
-      src: `${IMG_PATH}snowflake.png`,
-      size: Math.round(percentOf(WW, 8)),
-      position: {
-        x: WW / 2 + percentOf(WW, 21),
-        y: WH / 2 + percentOf(WH, 22.5),
-        offset: percentOf(WH, 1.5)
-      },
-      skew: 0.2,
-      rotate: 180,
-      timeout: 300
-    });
+    const scenes = this.getScenes();
 
     scenes.calf.animateScene();
     setTimeout(() => scenes.airplane.animateScene(), CALF_DURATION / 8);
@@ -70,11 +74,9 @@ export default class WinScene {
     this.ctx.clearRect(0, 0, WW, WH);
     this.ctx.save();
 
-    scenes.airplane.drawScene();
-    scenes.calf.drawScene();
-
-    scenes.snowflakeLeft.drawScene();
-    scenes.snowflakeRight.drawScene();
+    for (const name of Object.keys(scenes)) {
+      scenes[name].drawScene();
+    }
 
     this.ctx.restore();
   }
