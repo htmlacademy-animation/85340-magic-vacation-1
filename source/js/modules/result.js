@@ -1,7 +1,9 @@
 import WinScene from '../animation/win-scene';
+import LoseScene from '../animation/lose-scene';
 
 const resultAnimations = {
   result: new WinScene(),
+  result3: new LoseScene(),
 };
 
 export default () => {
@@ -63,9 +65,5 @@ export default () => {
 
   function animateResultScene(resultBlockId) {
     resultAnimations[resultBlockId].run();
-
-    window.addEventListener(`resize`, function () {
-      resultAnimations[resultBlockId].run();
-    });
   }
 };
