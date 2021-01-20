@@ -11,6 +11,8 @@ import TypographyAnimation from './modules/typography-animation';
 import FullPageScroll from './modules/full-page-scroll';
 import MinutesCounter from './animation/minutes-counter';
 import CountUp from './animation/count-up';
+import IntroScene from './animation/intro-scene';
+import StoryScene from './animation/story-scene';
 
 // init modules
 mobileHeight();
@@ -46,6 +48,8 @@ document.body.addEventListener(`screenChanged`, (ev) => {
   const textBlocks = screenElement.getElementsByClassName(`js-text-animation`);
   let animationTopScreenTextLine = {};
 
+  introScreenAnimation(screenElement.id);
+  storyScreenAnimation(screenElement.id);
   prizesScreenAnimation(screenElement.id);
   gameScreenAnimation(screenElement.id);
 
@@ -70,6 +74,24 @@ fullPageScroll.init();
 window.addEventListener(`load`, () => {
   document.body.classList.add(`load`);
 });
+
+function introScreenAnimation(screenId) {
+  const introScene = new IntroScene();
+  if (screenId === `top`) {
+    introScene.start();
+  } else {
+    introScene.stop();
+  }
+}
+
+function storyScreenAnimation(screenId) {
+  const storyScene = new StoryScene();
+  if (screenId === `story`) {
+    storyScene.start();
+  } else {
+    storyScene.stop();
+  }
+}
 
 function gameScreenAnimation(screenId) {
   if (screenId === `game`) {
