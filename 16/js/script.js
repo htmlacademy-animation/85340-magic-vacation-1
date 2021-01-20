@@ -61042,7 +61042,7 @@ class introScene extends _helpers_scene__WEBPACK_IMPORTED_MODULE_0__["default"] 
     super(`introScene`);
 
     this.sceneImgs = [
-      `img/story/scene-0.png`
+      `img/intro/scene-0.png`
     ];
   }
 }
