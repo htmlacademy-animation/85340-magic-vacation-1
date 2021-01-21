@@ -15,12 +15,22 @@ export default class Scene {
     this.renderer = new THREE.WebGLRenderer({canvas: this.canvas});
 
     this.render = this.render.bind(this);
+    window.addEventListener(`resize`, this.onResize.bind(this));
+  }
+
+  onResize() {
+    this.canvas.width = window.innerWidth;
+    this.canvas.height = window.innerHeight;
+
+    this.camera.aspect = window.innerWidth / window.innerHeight;
+    this.renderer.setSize(window.innerWidth, window.innerHeight);
   }
 
   start() {
     this.setRendererProperties();
     this.setScene();
     this.render();
+    this.onResize();
   }
 
   setScene() {
