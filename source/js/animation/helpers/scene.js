@@ -37,7 +37,40 @@ export default class Scene {
     const geometry = new THREE.PlaneGeometry(WW, WH);
     const loadManager = new THREE.LoadingManager();
     const textureLoader = new THREE.TextureLoader(loadManager);
-    const planeMaterials = this.sceneImgs.map((path) => new THREE.MeshBasicMaterial({map: textureLoader.load(path)}));
+    const planeMaterials = this.sceneImgs.map((path) => new THREE.RawShaderMaterial({
+      uniforms: {
+        map: {
+          value: textureLoader.load(path)
+        }
+      },
+      vertexShader: `
+      uniform mat4 projectionMatrix;
+      uniform mat4 modelMatrix;
+      uniform mat4 viewMatrix;
+
+      attribute vec3 position;
+      attribute vec3 normal;
+      attribute vec2 uv;
+
+      varying vec2 vUv;
+
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * viewMatrix * modelMatrix * vec4( position, 1.0 );
+      }`,
+      fragmentShader: `
+        precision mediump float;
+
+        uniform sampler2D map;
+
+        varying vec2 vUv;
+
+        void main() {
+          vec4 targetTexel = texture2D( map, vUv );
+
+          gl_FragColor = targetTexel;
+        }`
+    }));
 
     planeMaterials.forEach((material, index) => {
       const plane = new THREE.Mesh(geometry, material);
