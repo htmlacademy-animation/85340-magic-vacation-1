@@ -1,6 +1,8 @@
 import {WW} from './helpers/utils';
 import Scene from './helpers/scene';
 
+let activeSlideIndex = 0;
+
 export default class storyScene extends Scene {
   constructor() {
     super(`storyScene`);
@@ -16,10 +18,17 @@ export default class storyScene extends Scene {
   render() {
     this.animation = requestAnimationFrame(this.render);
 
+    this.setCameraPositionX();
+
     document.body.addEventListener(`slideChange`, (ev) => {
-      this.camera.position.x = WW * (ev.detail.active / 2);
+      activeSlideIndex = ev.detail.active / 2;
+      this.setCameraPositionX();
     });
 
     this.renderer.render(this.scene, this.camera);
+  }
+
+  setCameraPositionX() {
+    this.camera.position.x = WW * activeSlideIndex;
   }
 }

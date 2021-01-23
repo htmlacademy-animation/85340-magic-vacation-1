@@ -15,19 +15,62 @@ export default class Scene {
     this.renderer = new THREE.WebGLRenderer({canvas: this.canvas});
 
     this.render = this.render.bind(this);
+    window.addEventListener(`resize`, this.onResize.bind(this));
+  }
+
+  onResize() {
+    this.canvas.width = window.innerWidth;
+    this.canvas.height = window.innerHeight;
+
+    this.camera.aspect = window.innerWidth / window.innerHeight;
+    this.renderer.setSize(window.innerWidth, window.innerHeight);
   }
 
   start() {
     this.setRendererProperties();
     this.setScene();
     this.render();
+    this.onResize();
   }
 
   setScene() {
     const geometry = new THREE.PlaneGeometry(WW, WH);
     const loadManager = new THREE.LoadingManager();
     const textureLoader = new THREE.TextureLoader(loadManager);
-    const planeMaterials = this.sceneImgs.map((path) => new THREE.MeshBasicMaterial({map: textureLoader.load(path)}));
+    const planeMaterials = this.sceneImgs.map((path) => new THREE.RawShaderMaterial({
+      uniforms: {
+        map: {
+          value: textureLoader.load(path)
+        }
+      },
+      vertexShader: `
+      uniform mat4 projectionMatrix;
+      uniform mat4 modelMatrix;
+      uniform mat4 viewMatrix;
+
+      attribute vec3 position;
+      attribute vec3 normal;
+      attribute vec2 uv;
+
+      varying vec2 vUv;
+
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * viewMatrix * modelMatrix * vec4( position, 1.0 );
+      }`,
+      fragmentShader: `
+        precision mediump float;
+
+        uniform sampler2D map;
+
+        varying vec2 vUv;
+
+        void main() {
+          vec4 targetTexel = texture2D( map, vUv );
+
+          gl_FragColor = targetTexel;
+        }`
+    }));
 
     planeMaterials.forEach((material, index) => {
       const plane = new THREE.Mesh(geometry, material);
